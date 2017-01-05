@@ -3,68 +3,74 @@
 <title>Ty's Dojo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1 {font-family: "Raleway", Arial, sans-serif}
+body,h1 {font-family: "Roboto", Arial, sans-serif}
 h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="#home" class="w3-margin-left"><b>Ty Trusty</b></a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-left">Resume</a>
+      <a href="#about" class="w3-left">Projects</a>
+      <a href="#contact" class="w3-left w3-margin-right">Contact</a>
+    </li>
+  </ul>
+</div>
 
 <!-- Header -->
-<header class="w3-panel w3-padding-128 w3-center w3-opacity">
-  <h1 class="w3-xlarge">Ty Trusty</h1>
-  <h1>University of Texas at Austin</h1>
-  <h1>Computer Science</h1>
-  <h1>Sophomore</h1>
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px;"> 
+  <img class="w3-image" src="wallpaper.png" alt="background_wallpaper" width="1500" height="800">
+  <div class="w3-display-middle w3-center w3-text-white w3-wide w3-margin-top">
+    <h1 class="w3-xxlarge w3-padding w3-black w3-opacity-min"><b>Ty Trusty</b></h1>
+    <h1 class="w3-xlarge w3-hide-small">University of Texas at Austin</h1>
+    <h1 class="w3-xlarge w3-hide-small">Computer Science</h1>
+    <h1 class="w3-xlarge w3-hide-small">Sophomore</h1>
 
-  <div class="w3-padding-32">
-    <div class="w3-btn-bar w3-border w3-show-inline-block">
-      <a href="#" class="w3-btn">Home</a>
-      <a href="#" class="w3-btn w3-light-grey">Portfolio</a>
-      <a href="#" class="w3-btn">Contact</a>
-      <a href="#" class="w3-btn w3-hide-small">Weddings</a>
-    </div>
   </div>
+
 </header>
 
-<!-- Photo Grid -->
-<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
-  <div class="w3-half">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Resume Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-orange w3-padding-12">Resume</h3>
   </div>
 
-  <div class="w3-half">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-orange w3-padding-12">Projects</h3>
+    <p>Yea I'll add stuff here </p>
   </div>
-</div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contact</h3>
+    <p>Email: tytrusty AT cs.utexas.edu</p>
+	  <p>Github: <a href="https://github.com/tytrusty">https://github.com/tytrusty</a> </p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/ty-trusty-abb16612a">link</a></p>
+		<p>Facebook: <a href="https://www.facebook.com/people/Ty-Trusty/100010290963039">link</a></p>
   
-<!-- End Page Content -->
+<!-- End page content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center"> 
-  <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
-  <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.facebook.com/people/Ty-Trusty/100010290963039" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.linkedin.com/in/ty-trusty-abb16612a" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
   <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
