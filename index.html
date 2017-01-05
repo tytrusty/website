@@ -21,15 +21,15 @@ h1 {letter-spacing: 6px}
     </li>
     <!-- Float links to the right. Hide them on small screens -->
     <li class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-left">Resume</a>
-      <a href="#about" class="w3-left">Projects</a>
+      <a href="#resume" class="w3-left">Resume</a>
+      <a href="#projects" class="w3-left">Projects</a>
       <a href="#contact" class="w3-left w3-margin-right">Contact</a>
     </li>
   </ul>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px;"> 
+<header id="home" class="w3-display-container w3-content w3-center" style="max-width:1500px;"> 
   <img class="w3-image" src="wallpaper.png" alt="background_wallpaper" width="1500" height="800">
   <div class="w3-display-middle w3-center w3-text-white w3-wide w3-margin-top">
     <h1 class="w3-xxlarge w3-padding w3-black w3-opacity-min"><b>Ty Trusty</b></h1>
@@ -46,7 +46,7 @@ h1 {letter-spacing: 6px}
 <div class="w3-content w3-padding" style="max-width:1564px">
 
   <!-- Resume Section -->
-  <div class="w3-container w3-padding-32" id="projects">
+  <div class="w3-container w3-padding-32" id="resume">
     <h3 class="w3-border-bottom w3-border-orange w3-padding-12">Resume</h3>
     <p> Resume Info Updated: 1/5/2017
   </div>
@@ -77,20 +77,17 @@ h1 {letter-spacing: 6px}
           <p><b>Programming Language Familiarity</b></p>
           <p>Java, C</p>
           <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-orange" style="width:90%">
-              <div class="w3-center w3-text-white">85%</div>
+            <div class="w3-progressbar w3-round-xlarge w3-orange" style="width:85%">
             </div>
           </div>
           <p>Python, x86 Assembly</p>
           <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-orange" style="width:80%">
-              <div class="w3-center w3-text-white">60%</div>
+            <div class="w3-progressbar w3-round-xlarge w3-orange" style="width:60%">
             </div>
           </div>
           <p>HTML, CSS</p>
           <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-orange" style="width:75%">
-              <div class="w3-center w3-text-white">50%</div>
+            <div class="w3-progressbar w3-round-xlarge w3-orange" style="width:50%">
             </div>
           </div>
           
@@ -112,23 +109,26 @@ h1 {letter-spacing: 6px}
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Satellite Tracker Android APP (Java/XML)</b></h5>
 					<ul>
-						<li>Real-time tracking for all of NORAD tracked objects (about 18,000). 
-						<li>Tracks satellites over a user specified area. Asynchronously tracks while updating the UI. 
-						<li>Tracks in 2D-space with Google Maps API and in 3D using an android globe library. 
-						<li>Uses dedicated home server as a backend to provide satellite data to app. App performs automatic background synchronization with server data to maintain tracking accuracy. 
-						<li>Accumulated 45,000+ downloads; about 4.3/5 store rating. 
+						<li>Real-time tracking for all of NORAD tracked objects (about 18,000). </li>
+						<li>Tracks satellites over a user specified area. Asynchronously tracks while updating the UI. </li>
+						<li>Tracks in 2D-space with Google Maps API and in 3D using an android globe library. </li>
+						<li>Uses dedicated home server as a backend to provide satellite data to app. App performs automatic background synchronization with server data to maintain tracking accuracy. </li>
+						<li>Accumulated 45,000+ downloads; about 4.3/5 store rating. </li>
 					</ul>
 	
 						<hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>XSS Spider and Fuzzer (Python)</b></h5>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>coming soon to a theatre near you</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>DotA 2 Counter Picker Android APP (Java/XML)</b></h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+     			<ul>
+						<li>Created app that allows the user to select DotA 2 game characters and the program determines the best heroes against user’s selected characters.</li> 
+						<li>Created algorithms to reduce and process raw data (~12,000 to 111 entries) then present to user.</li>
+         </ul>
         </div>
         
         <div class="w3-container">
@@ -160,14 +160,33 @@ h1 {letter-spacing: 6px}
   <!-- End Grid -->
   </div>
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
+  <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-orange w3-padding-12">Projects</h3>
-    <p>Yea I'll add stuff here </p>
-  </div>
+  
+		<!-- Blog entry -->
+  	<div class="w3-card-4 w3-margin w3-white">
+    	<img src="feature_graphic.png" alt="satellite" style="width:100%">
+    	<div class="w3-container w3-padding-8">
+      	<h3><b>Satellite Tracker</b></h3>
+      	<h5>Android App published on Google Play Store</h5>
+    	</div>
+
+    	<div class="w3-container">
+      	<p> App to track satellites ... Better description coming soon</p>
+      	<div class="w3-row">
+        	<div class="w3-col m8 s12">
+          	<p><a href="https://play.google.com/store/apps/details?id=com.trusty.ty.satellite" class="w3-padding-large w3-white w3-border w3-hover-border-black"><b>APP STORE LINK</b></a></p>
+      	<h3><b></b></h3>
+        	</div>
+      	</div>
+    	</div>
+  	</div>
+
+	</div>
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contact</h3>
+    <h3 class="w3-border-bottom w3-border-orange w3-padding-12">Contact</h3>
     <p>Email: tytrusty AT cs.utexas.edu</p>
 	  <p>Github: <a href="https://github.com/tytrusty">https://github.com/tytrusty</a> </p>
 		<p>LinkedIn: <a href="https://www.linkedin.com/in/ty-trusty-abb16612a">link</a></p>
@@ -177,10 +196,10 @@ h1 {letter-spacing: 6px}
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center"> 
+<footer class="w3-container w3-padding-64 w3-grey w3-center"> 
   <a href="https://www.facebook.com/people/Ty-Trusty/100010290963039" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
   <a href="https://www.linkedin.com/in/ty-trusty-abb16612a" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> and coffee</p>
 </footer>
 
 	</body>
